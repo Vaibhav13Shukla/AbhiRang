@@ -128,21 +128,3 @@ LIMIT 10;
 SELECT COUNT(user_id) AS total_users, 
        COUNT(CASE WHEN created_at >= DATE('now', '-1 month') THEN 1 END) AS new_users_last_month
 FROM user;
-
--- 8. Additional Queries
--- ---------------------
-
--- Search for products by keyword
-SELECT p.product_id, p.name, p.price
-FROM product p
-WHERE p.name LIKE '%' || ? || '%' OR p.description LIKE '%' || ? || '%'
-ORDER BY p.name;
-
--- Display sales analytics for admins
-SELECT DATE(o.order_date) AS sale_date, COUNT(o.order_id) AS total_orders, SUM(oi.price_per_unit * oi.quantity) AS total_sales
-FROM "Order" o
-JOIN Order_Item oi ON o.order_id = oi.order_id
-GROUP BY sale_date
-ORDER BY sale_date DESC;
-
--- End of SQL Queries
