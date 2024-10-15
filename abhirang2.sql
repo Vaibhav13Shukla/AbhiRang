@@ -49,7 +49,7 @@ CREATE TABLE Cart_Item (
 );
 
 CREATE TABLE "Order" (
-    order_id INTEGER   
+    order_id INTEGER  
  PRIMARY KEY,
     user_id INTEGER NOT NULL,
     order_date DATETIME NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE Order_Item (
     FOREIGN KEY (product_id) REFERENCES product(product_id)
 );
 
-CREATE TABLE   
+CREATE TABLE 
  Commission (
     commission_id INTEGER PRIMARY KEY,
     user_id INTEGER NOT NULL, -- buyer
