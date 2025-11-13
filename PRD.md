@@ -1,17 +1,6 @@
 # ABHIRANG: Story-First Curated Art Gallery Platform
 ## Object-Oriented Programming Project Proposal
 
----
-
-**Course:** Object-Oriented Programming  
-**Institution:** Atria University  
-**Submitted By:** Arnav Patil  
-**Team Size:** Individual  
-**Project Type:** Option B - New Project  
-**Submission Date:** November 13, 2025
-
----
-
 ## Table of Contents
 
 1. [Project Overview](#1-project-overview)
